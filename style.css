@@ -1,0 +1,24 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+	overflow: auto;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+.test {
+    width: 700px;
+    margin: 100px;
+    border:1px solid #ccc;
+}
+.test1 {
+    display: block;
+    overflow: auto;
+}

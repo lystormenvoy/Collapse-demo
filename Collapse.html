@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="platform.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+<div class="test">
+
+<div class="test1">    
+<ul class="nav nav-pills" data-state="hide" data-pid="001">
+  <li class="nav-header"><p>年级</p></li>
+  <li class="active"><a href="http://192.168.1.254:9090/video.html" title="全部">全部</a>
+  </li>  
+  <li class="">     <a href="http://192.168.1.254:9090/video_g123456.html" title="小学">小学</a>  </li> 
+  <li class="">    <a href="http://192.168.1.254:9090/video_gf6bd8a.html" title="一年级">一年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g29dbb3.html" title="二年级">二年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g65bd0c.html" title="三年级">三年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g6786ee.html" title="四年级">四年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g5fd669.html" title="五年级">五年级</a>  </li> 
+  <li class="">    <a href="http://192.168.1.254:9090/video_g2a42c1.html" title="六年级">六年级</a>  </li>  
+  <li class="">     <a href="http://192.168.1.254:9090/video_g456789.html" title="初中">初中</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g7f7a12.html" title="七年级">七年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g2ab11f.html" title="八年级">八年级</a>  </li>
+  <li class=""><a href="http://192.168.1.254:9090/video_gdd19a6.html" title="九年级">九年级</a>  </li>
+  <li class=""><a href="http://192.168.1.254:9090/video_g147258.html" title="高中">高中</a></li>
+  <li class="">    <a href="http://192.168.1.254:9090/video_g0807b7.html" title="高一">高一</a>  </li>
+  <li class="">    <a href="http://192.168.1.254:9090/video_g5b5c71.html" title="高二">高二</a>  </li>
+  <li class=""><a href="http://192.168.1.254:9090/video_g26980c.html" title="高三">高三</a>
+  </li>
+</ul>
+
+<div class="more">
+    <a href="#" data-state="hide" data-pid="001">更多</a>
+</div>
+
+</div>
+
+<div class="test1">    
+<ul class="nav nav-pills" data-state="hide" data-pid="002">
+  <li class="nav-header"><p>年级</p></li>
+  <li class="active"><a href="http://192.168.1.254:9090/video.html" title="全部">全部</a>
+  </li>  
+  <li class="">     <a href="http://192.168.1.254:9090/video_g123456.html" title="小学">小学</a>  </li> 
+  <li class="">    <a href="http://192.168.1.254:9090/video_gf6bd8a.html" title="一年级">一年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g29dbb3.html" title="二年级">二年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g65bd0c.html" title="三年级">三年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g6786ee.html" title="四年级">四年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g5fd669.html" title="五年级">五年级</a>  </li> 
+  <li class="">    <a href="http://192.168.1.254:9090/video_g2a42c1.html" title="六年级">六年级</a>  </li>  
+  <li class="">     <a href="http://192.168.1.254:9090/video_g456789.html" title="初中">初中</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g7f7a12.html" title="七年级">七年级</a>  </li>  
+  <li class="">    <a href="http://192.168.1.254:9090/video_g2ab11f.html" title="八年级">八年级</a>  </li>
+  <li class=""><a href="http://192.168.1.254:9090/video_gdd19a6.html" title="九年级">九年级</a>  </li>
+  <li class=""><a href="http://192.168.1.254:9090/video_g147258.html" title="高中">高中</a></li>
+  <li class="">    <a href="http://192.168.1.254:9090/video_g0807b7.html" title="高一">高一</a>  </li>
+  <li class="">    <a href="http://192.168.1.254:9090/video_g5b5c71.html" title="高二">高二</a>  </li>
+  <li class=""><a href="http://192.168.1.254:9090/video_g26980c.html" title="高三">高三</a>
+  </li>
+</ul>
+
+<div class="more">
+    <a href="#" data-state="hide" data-pid="002">更多</a>
+</div>
+
+</div>
+
+
+</div>
+
+
+<script>
+$(document).ready(function() {
+    $(".more a").click(function(){
+       $(this).myswitch();
+    });
+
+});
+</script>
+
+
+    <script>
+    
+    // 
+    // function SetupRobot( arrays){
+    //  this.setupsArray = arrays //// setup1 = <div class="div1 setup "></div>
+    // // setupsArray[0] = setup1
+    // 
+    // }
+    // SetupRobot.prototype.preSetup 
+    // SetupRobot.prototype.nextSetup = function(cb){
+    //      others = setupsArray[~currentIndx+1]
+    //      return cb(setupsArray[currentIndx+1], others);
+    //      
+    //      
+    //  }
+    //  var instant = new SetupRobot( $(".setup"));
+    //  
+    //  instant.setupsArray; //= $(".setup").
+    //  
+    //  instatnt.next(function(target, others){
+    //      $(others).hide()
+    //      $(target).show()
+    //  })
+    //  
+    //  
+    </script>
+</body>
+</html>
